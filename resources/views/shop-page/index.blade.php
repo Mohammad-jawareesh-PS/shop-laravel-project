@@ -13,17 +13,17 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" href="   {{ asset('Components/css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{ asset('shop-Components/css/bootstrap.min.css')}}">
       <!-- style css -->
-      <link rel="stylesheet" href="{{ asset('Components/css/style.css') }}">
+      <link rel="stylesheet" href="{{ asset('shop-Components/css/style.css') }}">
       <!-- Responsive-->
 
-      {{-- {{ asset('css/app.css') }} --}}
-      <link rel="stylesheet" href="{{ asset('Components/css/responsive.css')}}">
+      {{-- {{ asset('shop-Components/') }} --}}
+      <link rel="stylesheet" href="{{ asset('shop-Components/css/responsive.css')}}">
       <!-- fevicon -->
-      <link rel="icon" href="  {{ asset('Components/images/fevicon.png')}}" type="image/gif" />
+      <link rel="icon" href="  {{ asset('shop-Components/images/fevicon.png')}}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="{{ asset('Components/css/jquery.mCustomScrollbar.min.css')}}css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{{ asset('shop-Components/css/jquery.mCustomScrollbar.min.css')}}css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
