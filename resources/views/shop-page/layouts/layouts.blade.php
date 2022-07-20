@@ -23,7 +23,7 @@
       <!-- fevicon -->
       <link rel="icon" href="  {{ asset('shop-Components/images/fevicon.png')}}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="{{ asset('shop-Components/css/jquery.mCustomScrollbar.min.css')}}css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{{ asset('shop-Components/css/jquery.mCustomScrollbar.min.css')}}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -35,7 +35,7 @@
    <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="{{ asset('shop-Components/images/loading.gif')}}images/loading.gif" alt="#" /></div>
+         <div class="loader"><img src="{{ asset('shop-Components/images/loading.gif')}}" alt="#" /></div>
       </div>
       <!-- end loader -->
       <!-- header -->
@@ -77,10 +77,10 @@
                                  <a class="nav-link" href="contact.html">Contact Us</a>
                               </li>
                               <li class="nav-item d_none login_btn">
-                                 <a class="nav-link" href="#">Login</a>
+                                 <a class="nav-link" href="./login">Login</a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Register</a>
+                                 <a class="nav-link" href="./register">Register</a>
                               </li>
                               <li class="nav-item d_none sea_icon">
                                  <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
