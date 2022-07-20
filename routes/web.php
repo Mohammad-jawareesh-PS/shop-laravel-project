@@ -14,10 +14,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('shop-page.index');
-})->middleware('auth');
-Route::resource('/glasse',GlasseController::class)->middleware('auth');
+// Route::get('/', function () {
+//     return view('shop-page.index');
+// })->middleware('auth');
+Route::resource('/',GlasseController::class)->middleware('auth');
+Route::get('/Glasse/all',[GlasseController::class,'all'])->name('all')->middleware('auth');
+Route::get('/Glasse/about',[GlasseController::class,'about'])->name('about')->middleware('auth');
+Route::get('/Glasse/contact',[GlasseController::class,'contact'])->name('contact')->middleware('auth');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

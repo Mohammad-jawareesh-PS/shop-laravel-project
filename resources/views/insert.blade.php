@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="/glasse" method="post" enctype="multipart/form-data">
+<form action="/" method="post" enctype="multipart/form-data">
     @csrf
     <h1>price</h1>
     <input type="number" name="price">

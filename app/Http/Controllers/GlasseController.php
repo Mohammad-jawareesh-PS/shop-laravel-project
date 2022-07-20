@@ -14,7 +14,21 @@ class GlasseController extends Controller
      */
     public function index()
     {
-        //
+        $data=Glasse::all();
+        $glass=Glasse::get()->where('type','Sunglasses');
+        return view('shop-page.index',compact('data','glass'));
+    }
+    public function all(){
+        $data=Glasse::all();
+        return view('shop-page.glasses',compact('data'));
+    }
+    public function about(){
+
+        return view('shop-page.about');
+    }
+    public function contact(){
+
+        return view('shop-page.contact');
     }
 
     /**
@@ -34,19 +48,23 @@ class GlasseController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
-        if(request()->hasFile('image')){
+
+        //  if (request()->hasFile('image')) {
             $path = request()->image->store('public/images');
 
-            $data['image']=$path;
+            $data['image'] = $path;
 
-       }
+
+
+
+
+        //  }
 
         Glasse::create([
-            'price'=>request('price')
-        ,'image'=>request('image')
-        ,'type'=>request('type')
-    ]);
+            'price' => request('price'), 'image' => $request->image->hashName(), 'type' => request('type')
+        ]);
         return back();
     }
 

@@ -32,7 +32,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout">
+   <body class="main-layout position_head">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="{{ asset('shop-Components/images/loading.gif')}}" alt="#" /></div>
@@ -48,33 +48,33 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="{{ asset('shop-Components/images/logo.png')}}" alt="#" /></a>
+                              <a href=""><img src="{{ asset('shop-Components/images/logo.png')}}" alt="#" /></a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button
-                        " data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="/">Home</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
+                                 <a class="nav-link" href="{{route('about')}}">About</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="glasses.html">Our Glasses</a>
+                                 <a class="nav-link" href="{{route('all') }}">Our Glasses</a>
                               </li>
-                              <li class="nav-item">
+                              {{-- <li class="nav-item">
                                  <a class="nav-link" href="shop.html">Shop</a>
-                              </li>
+                              </li> --}}
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
                               </li>
                               <li class="nav-item d_none login_btn">
                                  <a class="nav-link" href="./login">Login</a>
@@ -104,9 +104,9 @@
           <div class="row">
              <div class="col-md-8 offset-md-2">
                 <ul class="location_icon">
-                   <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Location</li>
-                   <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +01 1234567890</li>
-                   <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> demo@gmail.com</li>
+                   <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Palestine</li>
+                   <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +972567013418</li>
+                   <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> admin@gmail.com</li>
                 </ul>
              </div>
           </div>
