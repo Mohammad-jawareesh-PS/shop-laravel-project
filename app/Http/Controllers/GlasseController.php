@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Glasse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GlasseController extends Controller
 {
@@ -99,7 +100,7 @@ class GlasseController extends Controller
      */
     public function update(Request $request, Glasse $glasse)
     {
-        //
+        Auth::logout();
     }
 
     /**

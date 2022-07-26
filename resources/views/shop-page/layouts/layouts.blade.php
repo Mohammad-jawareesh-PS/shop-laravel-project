@@ -59,7 +59,7 @@
                         aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <div class="collapse navbar-collapse" id="navbarsExample04" method="post">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
                                  <a class="nav-link" href="/">Home</a>
@@ -76,15 +76,15 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
                               </li>
-                              <li class="nav-item d_none login_btn">
+                              {{-- <li class="nav-item d_none login_btn">
                                  <a class="nav-link" href="./login">Login</a>
-                              </li>
-                              <li class="nav-item d_none">
-                                 <a class="nav-link" href="./register">Register</a>
-                              </li>
-                              <li class="nav-item d_none sea_icon">
+                              </li> --}}
+                              {{-- <li class="nav-item d_none">
+                                 <a class="nav-link"  href="{{Auth::logout();}}"role="button">logout</a>
+                              </li> --}}
+                              {{-- <li class="nav-item d_none sea_icon">
                                  <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
-                              </li>
+                              </li> --}}
                            </ul>
                         </div>
                      </nav>
