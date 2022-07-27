@@ -13,4 +13,8 @@ class Glasse extends Model
         'type',
     ];
     use HasFactory;
+    public function cart(){
+        return $this->belongsTo(Cart::class);
+
+    }
 }

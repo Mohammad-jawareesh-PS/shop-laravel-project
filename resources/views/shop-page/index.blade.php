@@ -17,6 +17,7 @@
                            <h1> <span class="blu">Welcome <br></span>To Our Sunglasses</h1>
                            <figure><img src="{{ asset('storage/images/'. $item->image)}}" alt="#"/></figure>
                            <a class="read_more" href="{{route('all')}}">Shop Now</a>
+
                         </div>
                      </div>
                   </div>
@@ -77,6 +78,9 @@
                      <figure><img src="{{asset('storage/images/'. $item->image)}}" alt="#"/></figure>
                      <h3><span class="blu">$</span>{{$item->price}}</h3>
                      <p>{{$item->type}}</p>
+                     <form method="post" action="">
+                     <button>Add to cart</button>
+                     </form>
                   </div>
                </div>
                @endforeach

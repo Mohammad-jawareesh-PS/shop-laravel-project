@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\GlasseController;
 use App\Mail\MailContact;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
