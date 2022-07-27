@@ -5,16 +5,16 @@
           <h3>Contact Us</h3>
        </div>
        <div class="col-md-12 ">
-          <input class="contactus" placeholder="Name" type="type" name="Name">
+          <input class="contactus" placeholder="Name" type="type" name="name">
        </div>
        <div class="col-md-12">
-          <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
+          <input class="contactus" placeholder="Phone Number" type="type" name="phoneNumber">
        </div>
        <div class="col-md-12">
-          <input class="contactus" placeholder="Email" type="type" name="Email">
+          <input class="contactus" placeholder="Email" type="type" name="email">
        </div>
        <div class="col-md-12">
-          <input class="contactusmess" placeholder="Message" type="type" Message="Name">
+          <input class="contactusmess" placeholder="Message" type="type" Message="Name" name="message">
        </div>
        <div class="col-md-12">
           <button class="send_btn" type="submit">Send</button>
