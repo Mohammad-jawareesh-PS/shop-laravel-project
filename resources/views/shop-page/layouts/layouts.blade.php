@@ -76,9 +76,12 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
                               </li>
-                              {{-- <li class="nav-item d_none login_btn">
-                                 <a class="nav-link" href="./login">Login</a>
-                              </li> --}}
+                              <li class="nav-item d_none login_btn">
+                                <form action="{{url('/logout')}}" method="POST">
+                                    @csrf
+                                    <button class="nav-link" type="submit">logout</button>
+                                </form>
+                              </li>
                               {{-- <li class="nav-item d_none">
                                  <a class="nav-link"  href="{{Auth::logout();}}"role="button">logout</a>
                               </li> --}}
