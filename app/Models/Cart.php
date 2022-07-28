@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cart extends Model
 {
+    protected $fillable = [
+        'user_id',
+        'glasse_id',
+
+    ];
     use HasFactory;
     public function user(){
         return $this->belongsTo(User::class);

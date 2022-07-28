@@ -58,7 +58,7 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
-    public function projects(){
+    public function cart(){
         return $this->belongsTo(Cart::class);
     }
 }

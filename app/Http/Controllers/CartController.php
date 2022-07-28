@@ -35,7 +35,13 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         Cart::create([
+            'user_id'=>request('user_id'),
+            'glasse_id'=>request('glasse_id')
+
+         ]);
+
+         return back();
     }
 
     /**

@@ -25,10 +25,17 @@
                         <figure><img src="{{ asset('storage/images/'. $item->image)}}" alt="#"/></figure>
                         <h3><span class="blu">$</span>{{$item->price}}</h3>
                         <p>{{$item->type}}</p>
+                        <form method="post" action="/add">
+                            @csrf
+                            <input type="hidden" name="user_id" value="{{Auth::id()}}">
+                            <input type="hidden" name="glasse_id" value="{{$item->id}}">
+                            <input type="submit" value="Add to cart">
+
+                         </form>
                      </div>
                   </div>
                   @endforeach
-                 
+
                   {{-- <div class="col-md-12">
                      <a class="read_more" href="#">Read More</a>
                   </div> --}}

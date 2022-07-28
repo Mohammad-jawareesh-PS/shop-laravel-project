@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('image');
             $table->double('price');
             $table->string('type',250);
+            // $table->foreignId('cart_id');
             $table->timestamps();
         });
     }
