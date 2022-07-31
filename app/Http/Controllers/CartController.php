@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cart;
+use App\Models\Glasse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class CartController extends Controller
 {
@@ -14,7 +17,16 @@ class CartController extends Controller
      */
     public function index()
     {
-        //
+        $user=Auth::id();
+        $cart=Cart::get()->where('user_id',$user);
+
+        $glasses =[];
+        foreach($cart as $item){
+            $glasses[]=$item->glasse_id;
+        }
+        $glasse=Glasse::get()->whereIn('id',$glasses);
+
+        return view('shop-page.cart',compact('glasse'));
     }
 
     /**
@@ -24,7 +36,7 @@ class CartController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

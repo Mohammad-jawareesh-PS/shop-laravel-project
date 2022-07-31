@@ -35,7 +35,7 @@ Route::group(['middleware' => 'auth'], function (){
         Mail::to('mohammadjawareesh@gmail.com')->send(new MailContact(request('name'),request('email'),request('phoneNumber'),request('message')));
     return back();
     });
-    Route::resource('/add',CartController::class);
+    Route::resource('/cart',CartController::class);
 });
 
 
