@@ -8,21 +8,23 @@
                <li data-target="#banner1" data-slide-to="1"></li>
                <li data-target="#banner1" data-slide-to="2"></li>
             </ol>
-            @foreach ($glass as $item)
+
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
                            <h1> <span class="blu">Welcome <br></span>To Our Sunglasses</h1>
+                           @foreach ($glass as $item)
                            <figure><img src="{{ asset('storage/images/'. $item->image)}}" alt="#"/></figure>
+                           @endforeach
                            <a class="read_more" href="{{route('all')}}">Shop Now</a>
 
                         </div>
                      </div>
                   </div>
                </div>
-               @endforeach
+
 
             </div>
             <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">

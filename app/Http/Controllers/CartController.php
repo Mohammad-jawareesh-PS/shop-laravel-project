@@ -24,6 +24,7 @@ class CartController extends Controller
         foreach($cart as $item){
             $glasses[]=$item->glasse_id;
         }
+
         $glasse=Glasse::get()->whereIn('id',$glasses);
 
         return view('shop-page.cart',compact('glasse'));
